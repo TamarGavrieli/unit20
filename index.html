@@ -1,6 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="targil.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+	<link rel="stylesheet"
+		href="form.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+			<div class="form-section">
+			<!-- login form -->
+			<div class="login-box">
+				<input type="text"
+					class="name ele" id="nameLogin"
+					placeholder="yourname" required>
+					<input type="tel" id="phoneLogin"
+					class="name ele" pattern="[0-9]{3}-[0-9]{7}"
+					placeholder="Enter your number" required>
+				<input type="password" id="pass"
+					class="password ele"
+					placeholder="password" required>
+				<button class="clkbtn" value="go"onclick="log();">Login</button>
+			</div>
+
+			<!-- signup form -->
+			<div class="signup-box">
+				<input type="text"
+					class="name ele"
+					placeholder="Enter your name" id="name" required>
+				<input type="tel" id="phone"
+					class="name ele" pattern="[0-9]{3}-[0-9]{7}"
+					placeholder="Enter your number" required>
+				<input type="password" 
+					class="password ele"
+					placeholder="password"  id="pass1" required>
+				<input type="password"
+					class="password ele"
+					placeholder="Confirm password" id="pass2" required>
+				<button class="clkbtn" value="go"onclick="checkPswd();" >Signup</button>
+			</div>
+		</div>
+	
+	</div>
+	<script src="form.js" type="text/javascript"></script>
+</body>
+
+</html>
