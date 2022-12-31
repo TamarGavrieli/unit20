@@ -17,34 +17,49 @@ login.addEventListener("click", () => {
 
 function log() { 
   let myphone = document.getElementById("phoneLogin").value;
-  let user = window.localStorage.getItem(myphone);
-  if (user == undefined) {
-    alert('phone number is incorrect');
+  let myname = document.getElementById("nameLogin").value; 
+  let mypass = document.getElementById("pass").value;
+  let user = JSON.parse(window.localStorage.getItem(myphone));
+  if (user == undefined || user == null) {
+    alert('You have to submit');
+  }
+  else if(user.name==myname && user.password==mypass){
+    document.cookie = `phone=${myphone}`; 
+     document.location="play.html";
+    
+    // console.log(user.name);
+    // console.log(myphone);
+    // console.log(user);
   }
   else {
-      document.cookie = `phone=${myphone}`; 
+    alert('Password or username is incorrect');
+  
   }
 
 } 
 
 function checkPswd() { 
-    var pw1 = document.getElementById("pass1").value; 
-    var pw2 = document.getElementById("pass2").value;
+    let myphone = document.getElementById("phone").value;
+    let user = JSON.parse(window.localStorage.getItem(myphone));
+    let pw1 = document.getElementById("pass1").value; 
+    let pw2 = document.getElementById("pass2").value;
     if(pw1 != pw2)  
     {   
       alert("Passwords did not match");  
-    } else {  
+    }
+    else if(user != null){
+      alert("This phone is already exsist, you have to login");  
+    } 
+    else 
+    {  
       alert("Password created successfully");  
       let myname=document.getElementById("name").value; 
       let myphone=document.getElementById("phone").value; ``
       let mypass=document.getElementById("pass1").value; 
-      let myscore;
-      let myarr=[];
-      const user={name:myname, phone: myphone, password: mypass, score:myscore, arr:myarr };
+      let myscore=10;
+      const user={name:myname, phone: myphone, password: mypass, score:myscore};
       window.localStorage.setItem(myphone, JSON.stringify(user));
       Document.cookie=myphone;
       document.location="play.html";
     }  
   }  
-
-  

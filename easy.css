@@ -5,8 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*background-color: rgb(255, 234, 127);*/
-  background-image: url(./image/backplay.png);
+  background-color: rgb(255, 234, 127); 
 }
 
 html {
@@ -97,7 +96,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: #fffbf8;
+    background-color: #f73030;
     width: 150px;
     height:100%;
     text-align:left;

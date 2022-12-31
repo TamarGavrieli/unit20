@@ -22,11 +22,31 @@ function  changeImageT(x) {
   function findLetter(l){
     let letABC= document.getElementById(l.toString());
     letABC.src ="./image/"+ l+".png";
+	score();
   }
 
-  function levelHard(){
+  function levelHard(l){
     document.location="hard.html";
   }
-  function levelAdvance(){
-	document.location="advance.html";
+  function levelAdvance(l){
+	document.location="easy.html";
+  }
+
+  function levelEasy(l){
+	let x= document.getElementById(l.toString());
+	
+	document.location="play.html";
+  }
+
+
+  function score(){
+  const phone = document.cookie;
+  const emailvalue = phone.substring(phone.indexOf('=') + 1);
+  let user = localStorage.getItem(emailvalue);
+  let userjson = JSON.parse(user);
+  userjson.score += 5;
+  let myscore= userjson.score;
+  window.localStorage.setItem(emailvalue, JSON.stringify(userjson));
+  alert(myscore);
+
   }
