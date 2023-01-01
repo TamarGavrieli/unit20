@@ -1,0 +1,18 @@
+.games-list {
+    display: flex;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}
+
+
+.games-unit {
+  flex-grow: 1;
+  height: 100px;
+}
+
+.games-unit + .games-unit {
+    margin-right: 2%;
+}

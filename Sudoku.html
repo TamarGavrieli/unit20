@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סודוקו</title>
+    <link rel="stylesheet" href="sudokuStyle.css">
+    <link rel="stylesheet" type="text/css" href="topnav.css" />
+
+</head>
+<body>
+    <div class="sudoku-solver">
+        <label for="difficulty">Choose difficulty level:</label>
+            <select name="difficulty" id="difficulty_setting">
+                <option value="Easy" >Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+        <div id="puzzle" class="puzzle"></div>
+        <button type="button" id="clear-button" class="clear-button">Clear</button>
+    </div>    
+ 
+    <script  src="app.js" type="text/javascript"></script>
+</body>
+</html>
