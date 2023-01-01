@@ -6,53 +6,56 @@
 	<meta name="viewport"
 		content="width=device-width,
 						initial-scale=1.0">
-	<link rel="stylesheet" href="play.css">
+	<link rel="stylesheet"
+		href="play.css">
 </head>
 
 <script src="play.js"></script>
 <body>
 
 	<div class="container">
-		<label class="head-gallery"  id="advance">Advance</label>
-		  <div class="gallery" >
+		<p class="head-gallery"  id="easy">Easy level</p><br>
+		<p class="Guidelines">Think carefully about the answer to the exercise, then click on the question mark and find out what the answer is!
+			Each exercise earns you five points!</p><br>
+		  
+			<div class="gallery" >
 			  <figure class="gallery__item gallery__item--1">
-				  <img src="./image/targil2.png" alt="targil1" class="gallery__img" id="targil2">
+				  <img src="./image/bear0.png" alt="bear0" class="gallery__img" id="bear0">
 			  </figure>
 			  <figure class="gallery__item gallery__item--2">
-				  <img src="./image/targil7.png" alt="targil2" class="gallery__img" id="targil7">
+				  <img src="./image/bear1.png" alt="bear1" class="gallery__img" id="bear1">
 			  </figure>
 			  <figure class="gallery__item gallery__item--3">
-				  <img src="./image/targil5.png" alt="targil3" class="gallery__img" id="targil5">
+				  <img src="./image/bear2.png" alt="bear2" class="gallery__img" id="bear2">
 			  </figure>
 			  <figure class="gallery__item gallery__item--4">
-				  <img src="./image/targil9.png" alt="targil4" class="gallery__img" id="targil9">
+				  <img src="./image/bear5.png" alt="bear5" class="gallery__img" id="bear5">
 			  </figure>
 
 
-			<figure id="image11" class="gallery__item gallery__item--5">
-				<img src="./image/Q.png" alt="targil1" class="gallery__img" id="image2" onclick="changeImageT('image2')"  value="Change" autocomplete="off">
+			<figure id="image11" class="gallery__item gallery__item--5" >
+				<img src="./image/Q.png" alt="Paris4" class="gallery__img" id="image0" onclick="changeImageT('image0')"  value="Change" >
 			</figure>
 			<figure  class="gallery__item gallery__item--6">
-				<img src="./image/Q.png" alt="targil2" class="gallery__img" id="image7" onclick="changeImageT('image7')"  value="Change" autocomplete="off">
+				<img src="./image/Q.png" alt="Paris4" class="gallery__img" id="image1" onclick="changeImageT('image1')"  value="Change" >
 			</figure>
 			<figure  class="gallery__item gallery__item--7">
-				<img src="./image/Q.png" alt="targil3" class="gallery__img" id="image5" onclick="changeImageT('image5')"  value="Change" autocomplete="off">
+				<img src="./image/Q.png" alt="Paris4" class="gallery__img" id="image2" onclick="changeImageT('image2')"  value="Change" >
 			</figure>
 			<figure class="gallery__item gallery__item--8">
-				<img src="./image/Q.png" alt="targil44" class="gallery__img" id="image9" onclick="changeImageT('image9')"  value="Change" autocomplete="off">
+				<img src="./image/Q.png" alt="Paris4" class="gallery__img" id="image5" onclick="changeImageT('image5')"  value="Change" >
 			</figure>
-			
 		  </div>
 	</div>
-
-			 
+	
+		 
 	<div class="link">
 		<ul>
-		<li><a id="1" onclick="levelEasy('1')">EASY</a></li>
+		<li><a id="11" onclick="levelEasy()">EASY</a></li>
 		  <br>
-		  <li><a id="2" onclick="levelAdvance('2')">ADVANCE</a></li>
+		  <li><a id="22" onclick="levelAdvance()">ADVANCE</a></li>
 		  <br>
-		  <li><a id="3" onclick="levelHard('3')">HARD</a></li>
+		  <li><a id="33" onclick="levelHard()">HARD</a></li>
 		</ul>
 	</div>
 

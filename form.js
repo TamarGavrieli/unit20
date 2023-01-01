@@ -25,11 +25,7 @@ function log() {
   }
   else if(user.name==myname && user.password==mypass){
     document.cookie = `phone=${myphone}`; 
-     document.location="play.html";
-    
-    // console.log(user.name);
-    // console.log(myphone);
-    // console.log(user);
+     document.location="easy.html";
   }
   else {
     alert('Password or username is incorrect');
@@ -60,6 +56,6 @@ function checkPswd() {
       const user={name:myname, phone: myphone, password: mypass, score:myscore};
       window.localStorage.setItem(myphone, JSON.stringify(user));
       Document.cookie=myphone;
-      document.location="play.html";
+      document.location="easy.html";
     }  
   }  

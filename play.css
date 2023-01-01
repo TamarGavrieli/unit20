@@ -5,7 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(255, 234, 127);
+ /* background-color: rgb(255, 234, 127);*/
+
 }
 
 html {
@@ -19,12 +20,22 @@ body {
   line-height: 1.6; 
   padding-bottom: 0;
   padding-top: 0;
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./image/back.png);
+    opacity: 50;
 }
 
 .head-gallery{
-  text-align: center;;
+  text-align: center;
 }
 
+
+.Guidelines{
+  text-align: center;
+  font-weight: lighter;
+}
 .container {
   width: 60%;
   margin: 10px auto; 
@@ -96,7 +107,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: #f73030 !important;
+    background-color: #8ed2ff !important;
     width: 150px;
     height:100%;
     text-align:left;
@@ -105,7 +116,7 @@ body {
     padding: 10px;
   }
   .link:link{
-    color: #fffbf8;
+    color: #ffffff;
   }
   .link ul li{
     list-style: none;

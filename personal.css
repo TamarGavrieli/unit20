@@ -1,0 +1,61 @@
+th{
+    font-size: 25px;
+    color: rgb(52, 92, 92);
+}
+
+td{
+    font-size: 15px;
+}
+
+#tablearea table{
+    align-items: center;
+   
+}
+
+div #tablearea{
+    align-items: center;
+    left: 15px;
+    bottom: 20px;
+}
+
+table, th, td {
+    border: solid 2px  rgb(52, 92, 92);;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:12px;
+    vertical-align:middle;
+}
+
+table{
+    position:absolute;
+    left: 120px;
+    bottom: 40px;
+    top: 300px;
+    overflow:scroll;
+}
+h1.hellow{
+    font-size:60px;
+    color: rgb(52, 92, 92);
+    text-align: center;
+}
+
+h1{
+    font-size:45px;
+    color: rgb(52, 92, 92);
+    margin-right: 80px;
+}
+
+label{
+    font-size:25px;
+    margin-right: 80px;
+}
+
+output{
+    font-size:23px;
+}
+
+back_option{
+    height: 3px;
+    width: 3px;
+    size: 3px;
+}

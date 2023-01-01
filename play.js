@@ -29,13 +29,13 @@ function  changeImageT(x) {
     document.location="hard.html";
   }
   function levelAdvance(l){
-	document.location="easy.html";
+	document.location="advance.html";
   }
 
   function levelEasy(l){
 	let x= document.getElementById(l.toString());
 	
-	document.location="play.html";
+	document.location="easy.html";
   }
 
 
