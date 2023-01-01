@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+	<link rel="stylesheet"
+		href="play.css">
+</head>
+
+<script src="play.js"></script>
+<body>
+
+	<div class="container">
+		<p class="head-gallery"  id="hard">Hard level</p><br>
+		<p class="Guidelines">Think carefully about the answer to the exercise, then click on the question mark and find out what the answer is!
+			Each exercise earns you five points!</p><br>
+		  
+			<div class="gallery" >
+			  <figure class="gallery__item gallery__item--1">
+				  <img src="./image/muilti1.png" alt="muilti1" class="gallery__img" id="muilti1">
+			  </figure>
+			  <figure class="gallery__item gallery__item--2">
+				  <img src="./image/muilti6.png" alt="muilti6" class="gallery__img" id="muilti4">
+			  </figure>
+			  <figure class="gallery__item gallery__item--3">
+				  <img src="./image/multi8.png" alt="muilti8" class="gallery__img" id="muilti6">
+			  </figure>
+			  <figure class="gallery__item gallery__item--4">
+				  <img src="./image/muilti9.png" alt="muilti9" class="gallery__img" id="muilti8">
+			  </figure>
+
+
+			<figure id="image11" class="gallery__item gallery__item--5" >
+				<img src="./image/Q.png" alt="question" class="gallery__img" id="image1" onclick="changeImageT('image1')"  value="Change" >
+			</figure>
+			<figure  class="gallery__item gallery__item--6">
+				<img src="./image/Q.png" alt="question" class="gallery__img" id="image6" onclick="changeImageT('image6')"  value="Change" >
+			</figure>
+			<figure  class="gallery__item gallery__item--7">
+				<img src="./image/Q.png" alt="question" class="gallery__img" id="image8" onclick="changeImageT('image8')"  value="Change" >
+			</figure>
+			<figure class="gallery__item gallery__item--8">
+				<img src="./image/Q.png" alt="question" class="gallery__img" id="image9" onclick="changeImageT('image9')"  value="Change" >
+			</figure>
+		  </div>
+	</div>
+	
+		 
+	<div class="link">
+		<ul>
+		<li><a id="11" onclick="levelEasy()">EASY</a></li>
+		  <br>
+		  <li><a id="22" onclick="levelAdvance()">ADVANCE</a></li>
+		  <br>
+		  <li><a id="33" onclick="levelHard()">HARD</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

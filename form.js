@@ -53,7 +53,8 @@ function checkPswd() {
       let myphone=document.getElementById("phone").value; ``
       let mypass=document.getElementById("pass1").value; 
       let myscore=10;
-      const user={name:myname, phone: myphone, password: mypass, score:myscore};
+      let myarr=[];
+      const user={name:myname, phone: myphone, password: mypass, score:myscore, arr:myarr};
       window.localStorage.setItem(myphone, JSON.stringify(user));
       Document.cookie=myphone;
       document.location="easy.html";
