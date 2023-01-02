@@ -1,18 +1,19 @@
+
 .games-list {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     align-content: space-between;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
-    flex-basis: 20%;
 }
 
 
 .games-unit {
-  flex-grow: 1;
-  height: 100px;
+  width: 150px;
+  border: 15px solid green;
+  margin: 20px;
 }
 
 .games-unit + .games-unit {
-    margin-right: 2%;
+  margin-right: 2%;
 }
