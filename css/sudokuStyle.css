@@ -40,12 +40,19 @@ html {
 .sudoku-solver {
     margin: auto;
     width: 50%;
-    
 }
 
 .puzzle {
-    width: 540px;
-    height: 540px;
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    grid-template-rows: repeat(9, 10%);
+    grid-gap: 0.5em;
+    border: 2px solid #424242;
+    justify-content: start;
 }
 
 
@@ -58,6 +65,7 @@ html {
     font-size: 30px;
     width: 60px;
     height: 60px;
+    object-fit: contain;
     border: 1px #808080 solid;
 }
 

@@ -1,14 +1,13 @@
 *{
   direction: rtl;
-  unicode-bidi: isolate;
 }
 
 body {
-  display: contents;
   margin: 0;
   padding: 0;
   background-color: aliceblue;
 }
+
 
 
 header {
