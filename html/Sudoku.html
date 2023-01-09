@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,12 +24,13 @@
         <div class="sudoku-solver">
             <label for="difficulty">Choose difficulty level:</label>
                 <select name="difficulty" id="difficulty_setting">
-                    <option value="Easy" >Easy</option>
+                    <option value="Easy" selected>Easy</option>
                     <option value="Medium">Medium</option>
                     <option value="Hard">Hard</option>
                 </select>
+                <p id="timer">0</p>
             <div id="puzzle" class="puzzle"></div>
-            <button type="button" id="clear-button" class="clear-button">Clear</button>
+            <button type="button" id="check-button" class="check-button">Check</button>
         </div>  
         <div class="sudoku-win">
 

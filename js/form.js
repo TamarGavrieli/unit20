@@ -25,7 +25,7 @@ function log() {
   }
   else if(user.name==myname && user.password==mypass){
     document.cookie = `phone=${myphone}`; 
-     document.location="easy.html";
+     document.location="main.html";
   }
   else {
     alert('Password or username is incorrect');
@@ -56,7 +56,7 @@ function checkPswd() {
       let myarr=[];
       const user={name:myname, phone: myphone, password: mypass, score:myscore, arr:myarr};
       window.localStorage.setItem(myphone, JSON.stringify(user));
-      Document.cookie=myphone;
-      document.location="easy.html";
+      document.cookie="id="+myphone+",expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
+      //document.location="main.html";
     }  
   }  

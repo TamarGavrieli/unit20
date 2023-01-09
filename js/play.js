@@ -15,7 +15,7 @@
 	
 
 	
-function  changeImageT(x) {
+function changeImageT(x) {
     findLetter(x);
   }
  
@@ -40,7 +40,8 @@ function  changeImageT(x) {
 
 
   function score(){
-  const phone = document.cookie;
+  const phone = document.cookie.id;
+  alert(phone);
   const emailvalue = phone.substring(phone.indexOf('=') + 1);
   let user = localStorage.getItem(emailvalue);
   let userjson = JSON.parse(user);
