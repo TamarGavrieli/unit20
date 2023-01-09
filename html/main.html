@@ -27,7 +27,8 @@
         <h3>אתר המשחקים הסודי שלנו</h3>
     </div>
     <div class="games">
-        <p>משחקי חשיבה</p>
+        <div id="logic-games" class="games-categories">
+            <h3>Logic games</h3>
             <div class="games-list image-container">
                 <a href="./Sudoku.html" id="sudoku" target="_self">
                     <figure>
@@ -35,43 +36,51 @@
                         <figcaption>Sudoku</figcaption>
                     </figure>
                 </a>
-                <a href="" target="_self" id="chess">
+                <a href="" target="_self" id="chess" class="in-development">
                     <figure>
                         <img class="photo" alt="chess image" src="../image/chessPicture.png">
                         <figcaption>Chess</figcaption>
                     </figure>
                 </a>
-                <a id="crossword" href="" target="_self">
+                <a id="crossword" href="" target="_self" class="in-development">
                     <figure>
-                        <img class="photo" alt="crossword image"
-                            src="../image/crosswordPicture.png">
+                        <img class="photo" alt="crossword image" src="../image/crosswordPicture.png">
                         <figcaption>Crossword</figcaption>
                     </figure>
                 </a>
             </div>
-
-        <div class="games-list image-container">
-            <a href="./easy.html" id="arithmetic-exercises-game" target="_self">
-                <figure>
-                    <img class="photo" alt="Arithmetic exercises image" src="../image/sudokuPicture.png">
-                    <figcaption>Arithmetic exercises</figcaption>
-                </figure>
-            </a>
-            <a href="" target="_self" id="memory-game">
-                <figure>
-                    <img class="photo" alt="memory game image" src="../image/chessPicture.png">
-                    <figcaption>Memory</figcaption>
-                </figure>
-            </a>
-            <a id="music-game" href="" target="_self">
-                <figure>
-                    <img class="photo" alt="music game image"
-                        src="../image/crosswordPicture.png">
-                    <figcaption>Musical click</figcaption>
-                </figure>
-            </a>
+        </div>
+        <div id="animation-games" class="games-categories">
+            <h3>Animation games</h3>
+            <div class="games-list image-container">
+                <a href="./easy.html" id="arithmetic-exercises-game" target="_self">
+                    <figure>
+                        <img class="photo" alt="Arithmetic exercises image" src="../image/expiresPicture.png">
+                        <figcaption>Arithmetic<br>exercises</figcaption>
+                    </figure>
+                </a>
+                <a href="" target="_self" id="memory-game" class="in-development">
+                    <figure>
+                        <img class="photo" alt="memory game image" src="../image/memoryPicture.png">
+                        <figcaption>Memory</figcaption>
+                    </figure>
+                </a>
+                <a id="music-game" href="" target="_self" class="in-development">
+                    <figure>
+                        <img class="photo" alt="music game image" src="../image/musical.png">
+                        <figcaption>Musical click</figcaption>
+                    </figure>
+                </a>
+            </div>
         </div>
     </div>
 </body>
-
+<script>
+    let unLoad = document.querySelectorAll(".in-development");
+    unLoad.forEach((element)=>{
+        element.addEventListener("click", ()=>{
+            alert("IN DEVELOPMENT!");
+        })
+    });
+</script>
 </html>
