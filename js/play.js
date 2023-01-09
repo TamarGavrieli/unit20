@@ -1,14 +1,14 @@
 
-	function before(){
+	 function before(){
 		document.getElementById('myImage')
-		.src="./image/italy3.jpg"
+		.src="../image/italy3.jpg"
 		document.getElementById('message')
 		.innerHTML="Hii! GeeksforGeeks people";
 	}
 	
 	function afterr(){
 		document.getElementById('myImage')
-		.src="./image/italy2.jpg"
+		.src="../image/italy2.jpg"
 		document.getElementById('message')
 		.innerHTML="Bye! GeeksforGeeks people";
 	}
@@ -21,21 +21,21 @@ function changeImageT(x) {
  
   function findLetter(l){
     let letABC= document.getElementById(l.toString());
-    letABC.src ="./image/"+ l+".png";
+    letABC.src ="../image/"+ l+".png";
 	score();
   }
 
   function levelHard(l){
-    document.location="hard.html";
+    document.location="../html/hard.html";
   }
   function levelAdvance(l){
-	document.location="advance.html";
+	document.location="../html/advance.html";
   }
 
   function levelEasy(l){
 	let x= document.getElementById(l.toString());
 	
-	document.location="easy.html";
+	document.location="../html/easy.html";
   }
 
 

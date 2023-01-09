@@ -25,7 +25,7 @@ function log() {
   }
   else if(user.name==myname && user.password==mypass){
     document.cookie = `phone=${myphone}`; 
-     document.location="main.html";
+     document.location="../html/main.html";
   }
   else {
     alert('Password or username is incorrect');
