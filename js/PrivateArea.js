@@ -1,9 +1,21 @@
-import { getCookie, setCookie } from "./cookie.js";
+import {setCookie, getCookie, checkCookie} from './cookie.js';
 
-alert("hiiii");
-setCookie("Cheli", 100, 0.02);
+var user = JSON.parse(window.localStorage.getItem(getCookie("phone")));
 
-alert(window.localStorage.getItem("012-3456789"));
-var id = document.cookie;
+function setUserInformation() {
+    let userName = document.getElementById("first_name");
+    let userPhone = document.getElementById("phone");
+    let userPass = document.getElementById("password");
+    let userScore = document.getElementById("score");
+    userName.innerText = user.name;
+    userPhone.innerText = user.phone;
+    userPass.innerText = user.password;
+    userScore.innerText = user.score;
+}
 
-alert(id);
+function main()
+{
+    setUserInformation();
+}
+
+main()

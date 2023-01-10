@@ -25,7 +25,7 @@ function log() {
     alert('You have to submit');
   }
   else if(user.name==myname && user.password==mypass){
-    document.cookie = 'phone=${myphone}'; 
+    document.cookie = `phone=${myphone}`; 
     document.location="../html/main.html";
   }
   else {
@@ -55,9 +55,9 @@ function checkPswd() {
       let mypass=document.getElementById("pass1").value; 
       let myscore=10;
       let myarr=[];
-      const user={name:myname, phone: myphone, password: mypass, score:myscore, arr:myarr};
+      const user={name: myname, phone: myphone, password: mypass, score: myscore, arr: myarr};
       window.localStorage.setItem(myphone, JSON.stringify(user));
-      document.cookie="id="+myphone+",expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
-      //document.location="main.html";
+      document.cookie="id="+myphone;
+      document.location="../html/main.html";
     }  
   }  

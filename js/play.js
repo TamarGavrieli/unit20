@@ -1,14 +1,14 @@
 
-	 function before(){
+	function before(){
 		document.getElementById('myImage')
-		.src="../image/italy3.jpg"
+		.src="../image/italy3.jpg";
 		document.getElementById('message')
 		.innerHTML="Hii! GeeksforGeeks people";
 	}
 	
 	function afterr(){
 		document.getElementById('myImage')
-		.src="../image/italy2.jpg"
+		.src="../image/italy2.jpg";
 		document.getElementById('message')
 		.innerHTML="Bye! GeeksforGeeks people";
 	}
@@ -40,8 +40,8 @@ function changeImageT(x) {
 
 
   function score(){
-  const phone = document.cookie.id;
-  alert(phone);
+  const phone = document.cookie;
+  alert(phone+ "jjj");
   const emailvalue = phone.substring(phone.indexOf('=') + 1);
   let user = localStorage.getItem(emailvalue);
   let userjson = JSON.parse(user);
