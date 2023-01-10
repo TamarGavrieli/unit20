@@ -1,4 +1,3 @@
-alert(document.cookie);
 
 const levels = {
     easy : [
@@ -115,7 +114,7 @@ function loadRandomBoard(level) {
     let size = levels[level].length;
     let index = Math.floor(Math.random()*size);
     let savedBoard = levels[level][index];
-    board = savedBoard;
+    //board = savedBoard;
     for(let i=0; i<savedBoard.length; i++) {
         if(savedBoard[i] == 0) {
              inputs[i].value = "";

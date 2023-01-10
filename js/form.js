@@ -1,4 +1,5 @@
 
+
 let signup = document.querySelector(".signup");
 let login = document.querySelector(".login");
 let slider = document.querySelector(".slider");
@@ -24,8 +25,8 @@ function log() {
     alert('You have to submit');
   }
   else if(user.name==myname && user.password==mypass){
-    document.cookie = `phone=${myphone}`; 
-     document.location="../html/main.html";
+    document.cookie = 'phone=${myphone}'; 
+    document.location="../html/main.html";
   }
   else {
     alert('Password or username is incorrect');
@@ -50,7 +51,7 @@ function checkPswd() {
     {  
       alert("Password created successfully");  
       let myname=document.getElementById("name").value; 
-      let myphone=document.getElementById("phone").value; ``
+      let myphone=document.getElementById("phone").value; 
       let mypass=document.getElementById("pass1").value; 
       let myscore=10;
       let myarr=[];
