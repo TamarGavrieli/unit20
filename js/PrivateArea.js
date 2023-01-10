@@ -1,4 +1,4 @@
-import {setCookie, getCookie, checkCookie} from './cookie.js';
+import {getCookie} from './cookie.js';
 
 var user = JSON.parse(window.localStorage.getItem(getCookie("phone")));
 
