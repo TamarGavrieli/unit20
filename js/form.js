@@ -1,4 +1,4 @@
-
+import { setCookie} from "./cookie";
 
 let signup = document.querySelector(".signup");
 let login = document.querySelector(".login");
@@ -25,12 +25,11 @@ function log() {
     alert('You have to submit');
   }
   else if(user.name==myname && user.password==mypass){
-    document.cookie = `phone=${myphone}`; 
+    setCookie("phone", myphone, 30); 
     document.location="../html/main.html";
   }
   else {
     alert('Password or username is incorrect');
-  
   }
 
 } 
@@ -57,7 +56,7 @@ function checkPswd() {
       let myarr=[];
       const user={name: myname, phone: myphone, password: mypass, score: myscore, arr: myarr};
       window.localStorage.setItem(myphone, JSON.stringify(user));
-      document.cookie="id="+myphone;
+      setCookie("phone", myphone, 30);
       document.location="../html/main.html";
     }  
   }  

@@ -1,9 +1,4 @@
 
-
-export default function sayHi(user) {
-    alert(`Hello, ${user}!`);
-  }
-
 export function setCookie(cname, cvalue, exdays) {
     alert("gg");
     const d = new Date();
