@@ -1,4 +1,3 @@
-alert(document.cookie);
 
 const levels = {
     easy : [
@@ -212,26 +211,21 @@ function main() {
     });
     });
     cellInput.addEventListener("input", (e) => {
-            let index = e.target.index;
-            let value = e.target.value;
-
-            if(value<1 || value>9)
-            {
-                e.target.value = "";
-                e.target.style.borderColor  =  '#808080';
-                board[index] = "";
-                    }
-            else{
-                   if (!checkValue(index, value)) {
-                e.target.style.borderColor  = 'red';
-            }
-            else {
-                e.target.style.borderColor  =  '#808080';
-            }
-            board[index] = value;
+        let index = e.target.index;
+        let value = e.target.value;
+        let typein = e.type;
+        if(!value.checkValue(index, value))
+        {
+            alert("not corect num");
         }
-         
-    });
+        if(!insertToBoard(index, value)){
+            e.target.value = "";
+            e.target.style.borderColor  = 'red';
+        }
+        else {
+            e.target.style.borderColor  =  '#808080';
+        }
+        });
 
     checkButton.addEventListener("click", () => {
         isWin();
