@@ -173,13 +173,52 @@ const acceptable = (board, index, value) => {
     }
     return true;
 }
-
 function checkValue(index, value) {
     if(!acceptable(board, index, value)){
      return false;
     }
     return true;
  }
+function insertValue(element)
+{
+    let index = element.index;
+    let value = element.value;
+    let type = null;
+    if(!(value>0 && value<10)) 
+    {
+        type = 'empty';
+        // element.value = "";
+        // element.borderColor  =  '#808080';
+        // element.style.color  = 'black';
+    }
+    else if(!checkValue(index, value)){
+        type = 'wrong';
+    }
+    else {
+        type = 'correct';
+        // element.style.borderColor  =  '#808080';
+        // element.style.color  = 'black';
+    }
+
+    switch (type) {
+        case 'wrong':
+            element.style.borderColor  = 'red';
+            element.style.color  = 'red';
+            break;
+        case 'empty':
+            value = "";
+        case 'correct':
+            element.style.borderColor  =  '#808080';
+            element.style.color  = 'black';
+            break;
+
+        default:
+            alert("un-eccepted input error!");
+            return;
+    }
+    board[index] = value;
+}
+
 
  function isWin()
  {
@@ -192,6 +231,7 @@ function checkValue(index, value) {
         }
     }
     alert("win!");
+    return true;
  }
  
 const levelSelector = document.querySelector("#difficulty_setting"); 
@@ -211,20 +251,25 @@ function main() {
     });
     });
     cellInput.addEventListener("input", (e) => {
-        let index = e.target.index;
-        let value = e.target.value;
-        let typein = e.type;
-        if(!value.checkValue(index, value))
-        {
-            alert("not corect num");
-        }
-        if(!insertToBoard(index, value)){
-            e.target.value = "";
-            e.target.style.borderColor  = 'red';
-        }
-        else {
-            e.target.style.borderColor  =  '#808080';
-        }
+        insertValue(e.target);
+        // let index = e.target.index;
+        // let value = e.target.value;
+        // let typein = e.type;
+        // if(!(value>0 && value<10)) 
+        // {
+        //     e.target.value = "";
+        //     e.target.borderColor  =  '#808080';
+        //     e.target.style.color  = 'black';
+        // }
+        // else if(!checkValue(index, value)){
+        //     // e.target.value = "";
+        //     e.target.style.borderColor  = 'red';
+        //     e.target.style.color  = 'red';
+        // }
+        // else {
+        //     e.target.style.borderColor  =  '#808080';
+        //     e.target.style.color  = 'black';
+        // }
         });
 
     checkButton.addEventListener("click", () => {

@@ -72,7 +72,10 @@ html {
 
 .knowledge {
     font-weight: bold;
-color:#1B4F72;
+    color:#1B4F72;
+}
+.empty {
+    color:#000000;
 }
 
 .check-button, .clear-button {

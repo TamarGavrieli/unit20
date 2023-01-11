@@ -1,4 +1,11 @@
-import { setCookie} from "./cookie";
+
+ function setCookie(cname, cvalue, exdays) {
+  alert("gg");
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+} 
 
 let signup = document.querySelector(".signup");
 let login = document.querySelector(".login");
