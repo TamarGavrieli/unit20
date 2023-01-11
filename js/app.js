@@ -109,7 +109,7 @@ function drawBoard() {
         sudokuBoard.appendChild(inputElement);
     }
 }
-function loadRandomBoard(level) {
+function loadRandomBoard(level="easy") {
     const inputs = document.querySelectorAll('input');
     let size = levels[level].length;
     let index = Math.floor(Math.random()*size);
@@ -130,6 +130,11 @@ function loadRandomBoard(level) {
     display = document.querySelector('#timer');
     startTimer(fiveMinutes, display);
     savedBoard = [];
+}
+function clearBoard()
+{
+    const inputs = document.querySelectorAll('input');
+    board=[];
 }
 const levelCases = (lev)=>{
     switch (lev) {
@@ -240,7 +245,7 @@ const checkButton = document.querySelector("#check-button");
 
 function main() {
     drawBoard();
-    loadRandomBoard("easy");
+    loadRandomBoard();
     // when client clicked on select element 
     levelSelector.addEventListener("click", () => {
     // if default value is changed
